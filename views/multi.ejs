@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="http://getbootstrap.com/dist/css/bootstrap.min.css"/>
+    <title>The form way to upload pictures...</title>
+</head>
+<style>
+    body {
+        padding: 3%
+    }
+
+    #uploadedImages img {
+        display: inline-block;
+        margin: 5px;
+    }
+</style>
+<body>
+<h1>The form way to upload pictures...</h1><br/>
+<form action="/upload/multi" , method="post" , enctype="multipart/form-data" name="uploadForm">
+    <input type="file" multiple="multiple" accept="image/*" name="photos"/><br/>
+    <input type="submit" value="Upload" class="btn btn-info"/>
+</form>
+</body>
+</html>
