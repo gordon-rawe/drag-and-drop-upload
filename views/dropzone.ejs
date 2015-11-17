@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Dropzone example</title>
+    <link rel="stylesheet" href="/dropzone/dist/dropzone.css">
+    <style>
+        body {
+            background: #EEEEEE;
+            font-family: "Microsoft Yahei";
+        }
+
+        #demo-upload {
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 120px;
+            border-radius: 10px;
+            height: 330px;
+            border: dashed 2px #00a2d4;
+        }
+
+        .message {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+<div id="dropzone">
+    <form action="/upload/dropzone" class="dropzone dz-clickable" id="demo-upload">
+        <div class="dz-message message">Drop files here or click to upload.<br>
+            <span class="note">(Files to upload are restricted to <strong>jpg,png,pdf</strong> types.)</span>
+        </div>
+    </form>
+</div>
+</body>
+<script src="/dropzone/dist/dropzone.js"></script>
+</html>
